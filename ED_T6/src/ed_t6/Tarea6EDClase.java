@@ -17,13 +17,16 @@ public class Tarea6EDClase {
                 precioProducto-=5;
             if (numProductos!=0){
                 precioTotal = precioProducto*0.8;
-                System.out.println("El total a pagar es:"+precioTotal);
-                System.out.println("Enviado");
+                imprimirDescuento(precioTotal);
         }   else {
                 precioTotal = precioProducto*0.95;
-                System.out.println("El total a pagar es:"+precioTotal);
-                System.out.println("Enviado");
+                imprimirDescuento(precioTotal);
         }   
+    }
+
+    private void imprimirDescuento(double precioTotal) {
+        System.out.println("El total a pagar es:"+precioTotal);
+        System.out.println("Enviado");
     }
 
 
